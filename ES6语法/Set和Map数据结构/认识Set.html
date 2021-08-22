@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			// 1.什么是Set
+			//可以理解为集合
+			
+			[1,2]
+			//数组是一系列有序的数据集合
+			
+			//Set是一系列无序、没有重复值的数据集合
+			
+			//2.理解Set
+			
+			//数组的创建方式
+			// console.log([1,2,1])
+			// console.log(new Array(1,2,1))
+			
+			const s = new Set()
+			s.add(1)
+			s.add(2)
+			
+			// Set中不能有重复的成员
+			s.add(1)
+			console.log(s)
+			//Set没有下标去标示每一个值，所以Set是无序的，也不能像数组那样通过下标去访问Set的成员
+			
+		</script>
+</body>
+</html>

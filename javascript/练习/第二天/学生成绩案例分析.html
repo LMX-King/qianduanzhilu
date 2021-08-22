@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 输入班级人数，弹出该班级人数每名学生的成绩，最后成绩加起来，求平均值
+        var xs = prompt('请输入班级人数');
+        var sum = null;
+        var ave = null;
+        for (var i = 1; i <= xs; i++) {
+            var cj = prompt('第' + i + '名学生的成绩是：')
+            sum += Number(cj);
+        }
+        ave = sum / xs;
+        alert('所有成绩加起来是' + sum);
+        alert('平均值是' + ave);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

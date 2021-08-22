@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小熊快跑</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            background-color: #121628;
+        }
+
+        .bear {
+            position: absolute;
+            top: 230px;
+            width: 200px;
+            height: 100px;
+            background: url(images/bear.png) no-repeat;
+            overflow: hidden;
+            animation: bear steps(8) .4s infinite, move 2s forwards;
+            z-index: 1;
+        }
+
+        .bg2 {
+            position: absolute;
+            bottom: 150px;
+        }
+
+        .bg2 img {
+            width: 100%;
+        }
+
+        .bg1 {
+            position: relative;
+            bottom: 0;
+            height: 336px;
+            background: url(images/bg1.png) no-repeat;
+            animation: moution linear 10s infinite;
+
+        }
+
+        @keyframes bear {
+            from {
+                background-position: 0px 0px;
+            }
+
+            to {
+                background-position: -1600px 0px;
+            }
+        }
+
+        @keyframes move {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes moution {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -3840px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear"></div>
+    <div class="bg1"></div>
+    <!-- <div class="bg2"><img src="images/bg2.png" alt=""></div> -->
+
+</body>
+
+</html>

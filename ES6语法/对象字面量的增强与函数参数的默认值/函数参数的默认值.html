@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 函数参数默认值的基本用法
+			// const multiply = (x,y) => {
+			// 	if(typeof y === 'undefined'){
+			// 		y = 1
+			// 	}
+			// 	return x * y
+			// }
+			const multiply = (x, y = 1) => x * y
+			console.log(multiply(8))
+		</script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+@import "commom";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+@baseFont: 50;
+.search-content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: (88rem / @baseFont);
+    .classify {
+        height: (70rem / @baseFont);
+        width: (44rem / @baseFont);
+        background: url(../images/classify.png) no-repeat;
+        background-size: (44rem / @baseFont) (70rem / @baseFont);
+        margin: (11rem / @baseFont) (25rem / @baseFont) (7rem / @baseFont) (24rem / @baseFont);
+    }
+    .search {
+        flex: 1;
+        input {
+            outline: none;
+            width: 100%;
+            height: (66rem / @baseFont);
+            border-radius: (33rem / @baseFont);
+            border: 0;
+            background-color: #fff2cc;
+            margin-top: (11rem / @baseFont);
+            padding-left: (55rem / @baseFont);
+            font-size: (25rem / @baseFont);
+            color: #757575;
+        }
+    }
+    .login {
+        width: (75rem / @baseFont);
+        height: (70rem / @baseFont);
+        line-height: (70rem / @baseFont);
+        color: #fff;
+        margin: (10rem / @baseFont);
+        font-size: (25rem / @baseFont);
+        text-align: center;
+        color: #fff;
+    }
+}
+.banner {
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+     img {
+        width: 100%;
+        height: 100%;
+     }
+}
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        display: flex;
+        flex: 20%;
+        width: (150rem / @baseFont);
+        height: (140rem / @baseFont);
+        align-items: center;
+        flex-direction: column;
+        img {
+            width: (82rem / @baseFont);
+            height: (82rem / @baseFont);
+            margin-bottom: (15rem / @baseFont);
+        }
+        span {
+            color: #333;
+            font-size: (25rem / @baseFont);
+        }
+    }
+}

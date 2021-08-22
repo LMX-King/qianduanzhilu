@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gettwo() {
+            var day = prompt('请输入你要查询的年份：');
+            if (day % 4 == 0 && day % 100 != 0 || day % 400 == 0) {
+                alert('2月份有29天');
+            } else {
+                alert('2月份有28天');
+            }
+
+        }
+        gettwo();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

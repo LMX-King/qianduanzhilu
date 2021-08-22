@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            height: 50px;
+            width: 30px;
+            background-color: pink;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="on">开启定时</button>
+    <span></span>
+    <button class="off">结束定时</button>
+    <script>
+        var on = document.querySelector('.on');
+        var span = document.querySelector('span');
+        var off = document.querySelector('.off');
+        var num = 1;
+        var jsq = null;
+        on.addEventListener('click', function () {
+            jsq = setInterval(function () {
+                span.innerHTML = num++;
+            }, 500)
+        })
+        off.addEventListener('click', function () {
+            clearTimeout(jsq);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="vla">
+    <input type="checkbox" class="btn"><span>记住用户名</span>
+    <script>
+        var vla = document.querySelector('.vla')
+        var btn = document.querySelector('.btn')
+        if (localStorage.getItem('uname')) {
+            btn.checked = 'checked'
+            vla.value = localStorage.getItem('uname')
+        } else {
+            btn.checked = ''
+
+        }
+        btn.addEventListener('click', function () {
+            if (this.checked) {
+                this.checked = 'checked'
+                localStorage.setItem('uname', vla.value)
+            } else {
+                this.checked = ''
+                localStorage.removeItem('uname')
+            }
+
+        })
+    </script>
+</body>
+
+</html>

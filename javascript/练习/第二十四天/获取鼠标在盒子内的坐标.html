@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin: 50px 100px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .son {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        var son = document.querySelector('.son');
+        box.addEventListener('mousemove', function (e) {
+            var x = e.pageX - this.offsetLeft;
+            var y = e.pageY - this.offsetTop;
+            son.style.top = x + 'px';
+            son.style.left = y + 'px';
+        })
+    </script>
+</body>
+
+</html>

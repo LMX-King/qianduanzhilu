@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: relative;
+            width: 1500px;
+        }
+
+        div span {
+            position: absolute;
+            top: 4px;
+            right: 315px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gg">
+        <img src="../images/jdgg.png" alt="">
+        <span>X</span>
+    </div>
+    <script>
+        var span = document.querySelector('span');
+        var gg = document.querySelector('div');
+        span.onclick = function () {
+            gg.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

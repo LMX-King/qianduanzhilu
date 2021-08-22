@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getdate(day) {
+            return day % 4 == 0 && day % 100 != 0 || day % 400 == 0 ? '闰年' : '不是闰年';
+        }
+        var today = prompt('请输入你要查询的年份：');
+        var Day = getdate(today);
+        alert(Day);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

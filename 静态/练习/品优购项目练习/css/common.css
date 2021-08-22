@@ -1,0 +1,245 @@
+/* 引入字体样式表 */
+@font-face {
+    font-family: 'Linearicons-Free';
+    src: url('../fonts/Linearicons-Free.eot?w118d');
+    src: url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+        url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+        url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+        url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+        url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.style_red {
+    color: #c81623;
+}
+.shortcut {
+    height: 30px;
+    background-color: #f1f1f1;
+    color: #666;
+    line-height: 30px;
+}
+.shortcut ul li {
+    float: left;
+}
+.shortcut .fr ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    margin: 0 15px;
+}
+.arrow-icon::after {
+    font-family: 'Linearicons-Free';
+    content: '\e874';
+    margin-left: 6px;
+}
+.header {
+    position: relative;
+    height: 105px;
+}
+.header .logo {
+    position: absolute;
+    top: 25px;
+    height: 61px;
+    width: 171px;
+    background: url(../images/logo.png) no-repeat
+}
+.header .logo a {
+    display: block;
+    height: 61px;
+    width: 171px;
+    font-size: 0;
+}
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    text-indent: 10px;
+}
+.search button {
+    float: right;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+.hotwords {
+    position: absolute;
+    left: 346px;
+    top: 67px;
+}
+.hotwords a {
+    padding: 0 10px;
+}
+.shopcar {
+    position: absolute;
+    right: 62px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+.shopcar::before {
+    font-family: 'Linearicons-Free';
+    content: '';
+    color: #b1191a;
+    margin-right: 5px;
+}
+.shopcar::after {
+    font-family: 'Linearicons-Free';
+    content: '';
+    margin-left: 10px;
+}
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    padding: 0 5px;
+    line-height: normal;
+    color: #fff;
+    background-color: #e60012;
+    border-radius: 7px 7px 7px 0;
+}
+/* nav模块制作 */
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+.dropdown {
+    height: 45px;
+    width: 210px;
+    background-color: #b1191a;
+}
+.dropdown .dt {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.dropdown .dd {
+    /* display: none; */
+    width: 100%;
+    height: 465px;
+    background-color: #c81623;
+}
+.dropdown .dd ul li {
+    padding: 0 10px;
+    margin-left: 2px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+}
+.dropdown .dd ul li a {
+    color: #fff;
+}
+.dropdown .dd ul li a::after {
+    float: right;
+    font-family: 'Linearicons-Free';
+    content: '';
+}
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+.navitems ul {
+    padding-left: 15px;
+}
+.navitems ul li {
+    float: left;
+}
+.navitems ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 25px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #5d5d5d;
+}
+.footer {
+    height: 415px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+.mod_service ul li {
+    float: left;
+    height: 50px;
+    width: 240px;
+    padding-left: 35px;
+}
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    margin-right: 7px;
+}
+.service_txt h4 {
+    margin-top: 8px;
+    font-size: 14px;
+}
+.service_txt p {
+    font-size: 12px;
+}
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ededed;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+.mod_help dl dt{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.mod_copyright .links {
+    margin-bottom: 15px;
+}
+.copyright {
+    line-height: 20px;
+}
+.mod_copyright .links a {
+    padding: 0 5px;
+}

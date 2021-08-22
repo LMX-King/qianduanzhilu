@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 1.方括号语法的用法
+			// const prop = 'age'
+			// const person = {
+			// 	// 相当于把age赋值18
+			// 	[prop]:18
+			// }
+			// console.log(person)
+			
+			// 2.方括号中可以放什么
+				// [值或通过计算可以得到值的（表达式）]
+			// const prop = 'age'
+			// const func = () => 'age'
+			// const person = {
+			// 	// [prop] : 18,
+			// 	[func()]:18,
+			// 	// ['age']:18,
+			// 	// ['a'+'ge']:18
+			// }
+			// console.log(person)
+			
+			// 3.方括号语法和点语法的区别
+			// 点语法是方括号语法的特殊形式
+			const person = {}
+			// 如果语法比较复杂，请使用方括号语法
+			person.age = 18
+			console.log(person)
+		</script>
+	</body>
+</html>

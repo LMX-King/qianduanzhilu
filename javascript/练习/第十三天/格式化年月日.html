@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var date = new Date('2019/5/1 15:30:59');
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var date1 = date.getDate();
+        var day = date.getDay();
+        var hours = date.getHours();
+        var min = date.getMinutes();
+        var second = date.getSeconds();
+        var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        console.log('今天是' + year + '年' + month + '月' + date1 + '日 ' + arr[day] + hours + '点' + min + '分' + second + '秒');
+
+        function Time() {
+            var h = date.getHours();
+            h = h < 10 ? '0' + h : h;
+            var m = date.getMinutes();
+            m = m < 10 ? '0' + m : m;
+            var s = date.getSeconds();
+            s = s < 10 ? '0' + s : s;
+            return h + ':' + m + ':' + s;
+        }
+        console.log(Time());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

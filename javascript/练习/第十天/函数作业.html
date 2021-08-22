@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.写一个函数，用户输入任意两个数字的任意算数运算（简单的计算器小功能），并能弹出运算后的结果。
+        // function geiSum(num1, num2) {
+        //     var sum = null;
+        //     sum = Number(num1) + Number(num2);
+        //     return sum;
+        // }
+        // var one = prompt('请输入相加的第一个数字：');
+        // var two = prompt('请输入相加的第二个数字：');
+        // var Sum = geiSum(one, two);
+        // alert('结果是：' + Sum);
+
+        // 2.写一个函数，用户输入任意两个数字的最大值，并能弹出运算后的结果。
+        // function getSum(num1, num2) {
+        //     return num1 > num2 ? num1 : num2;
+        // }
+        // var one = prompt('请输入任意两个数字选出最大值：');
+        // var two = prompt('请输入任意两个数字选出最大值：');
+        // var max = getSum(one, two);
+        // alert('最大值是：' + max);
+
+        // 3.写一个函数，用户输入任意三个不同数字的最大值，并能弹出运算后的结果。
+        function getSum(arr) {
+            var Max = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > Max) {
+                    Max = arr[i];
+                }
+                return Max;
+            }
+        }
+        var one = prompt('请输入任意三个数字选出最大值：');
+        var two = prompt('请输入任意三个数字选出最大值：');
+        var three = prompt('请输入任意三个数字选出最大值：');
+        var max = getSum([Number(one), Number(two), Number(three)]);
+        alert('最大值是：' + max);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

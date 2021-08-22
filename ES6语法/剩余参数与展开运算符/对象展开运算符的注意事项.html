@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1.空对象的展开
+		// 如果展开一个空对象，则没有任何效果
+		// console.log({...{}})
+		
+		// 2.非对象的展开
+		// 如果展开的不是对象，则会自动将其转为对象，再将其属性罗列出来
+		// console.log({...1})
+		// console.log(new Object(1))
+		// console.log({...undefined})
+		// console.log({...null})
+		// console.log({...true})
+		
+		// 如果展开运算符后面是字符串，它会自动转成一个类型数组的对象，因此返回的不是空对象
+		// console.log({...'alex'})
+		// console.log([...'alex'])
+		// console.log(...'alex')
+		
+		// console.log({...[1,2,3]})
+		
+		// 3.对象中对象属性的展开
+		// 不会展开对象中的对象属性
+		const apple = {
+			feature:{
+				taste:'甜'
+			}
+		}
+		const pen = {
+			feature:{
+				color:'黑色',
+				shape:'圆柱形'
+			},
+			use:'写字'
+		}
+		console.log({...apple,...pen})
+		// 相当于
+		console.log({
+			// feature:{
+			// 	taste:'甜'
+			// }, //被覆盖
+			feature:{
+				color:'黑色',
+				shape:'圆柱形'
+			},
+			use:'写字'
+		})
+	</script>
+</body>
+</html>

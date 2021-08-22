@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Linearicons-Free';
+    src: url('../fonts/Linearicons-Free.eot?w118d');
+    src: url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+        url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+        url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+        url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+        url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.main {
+    margin-top: 10px;
+    margin-left: 220px;
+    width: 980px;
+    height: 455px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd {
+    height: 34px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+    line-height: 34px;
+}
+.news-hd p {
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+.news-hd span {
+    float: right;
+}
+.news-hd span::after {
+    font-family: 'Linearicons-Free';
+    content: '\e876';
+    margin-left: 8px;
+    line-height: 34px;
+}
+.news-bd {
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+.news-bd li {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    height: 210px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul li {
+    float: left;
+    height: 70px;
+    width: 25%;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li i {    
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background-color: pink;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.lifeservice ul li:nth-child(4n) {
+    border-right: 0;
+}
+.bargain {
+    margin-top: 6px;
+}
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    padding-top: 30px;
+    background-color: #5c5251;
+    text-align: center;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+.youlike {
+    height: 258px;
+    margin-top: 10px;
+}
+.youlike_title {
+    height: 28px;
+    margin-bottom: 5px;
+}
+.youlike .youlike_title h2 {
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-style: normal;
+}
+.youlike a {
+    float: right;
+}
+.youlike .youlike_title a::after {
+    font-family: 'Linearicons-Free';
+    content: '\e86f';
+}
+.youlike_pic {
+    border: 1px solid #ededed;
+    height: 230px;
+    overflow: hidden;
+
+}
+.youlike_pic li {
+    float: left;
+}
+.youlike_pic img {
+    border: 0;
+    vertical-align: middle;
+}
+.ewdfhz {
+    width: 1202px;
+}
+.funarea {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 433px;
+}
+.funarea h3 {
+    font-size: 18px;
+    color: #333;
+}
+.funarea_content {
+    height: 405px;
+    border: 1px dashed #ebebeb;
+}
+.funarea_content .funbook {
+    float: left;
+    height: 405px;
+    width: 404px;
+    
+}
+.goods {
+    float: left;
+    width: 226px;
+    height: 405px;
+}   
+.goods .gdtitle {
+    float: left;
+    height: 41px;
+    width: 226px;
+    border-bottom: 1px dashed #ebebeb;
+    border-right: 1px dashed #ebebeb;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+.goods .goods_ft {
+    width: 100%;
+    height: 158px;
+}
+.pinpaigou {
+    float: left;
+    height: 405px;
+    width: 404px;
+}
+.pinpaigou .pintitle {
+    height: 41px;
+    width: 404px;
+    border-right: 1px dashed #ebebeb;
+    border-bottom: 1px dashed #ebebeb;
+    line-height: 41px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+.pinpaigou .fun_dianfanbao {
+    width: 405px;
+    height: 206px;
+}
+.pinpaigou .pin_dapai {
+    width: 202px;
+    height: 158px;
+}
+.pinpaigou .funarea_ico {
+    width: 162px;
+    height: 405px;
+}
+.box-hd {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 30px;
+}
+.box-hd h2 {
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.box-hd ul li {
+    float: left;
+}
+.box-hd ul li a {
+    padding: 0 15px;
+}
+.tab_list {
+    line-height: 30px;
+}
+.box-bd {
+    overflow: hidden;
+    height: 361px;
+    border-bottom: 1px solid #ededed;
+
+}
+.tab_list_item>div {
+    float: left;
+}
+.dianshi {
+    height: 359px;
+    width: 207px;
+}
+.shuihu {
+    width: 328px;
+    height: 359px;
+}
+.youhui {
+    height: 359px;
+    width: 219px;
+}
+.caidian {
+    width: 221px;
+    height: 359px;
+}
+.kongtiao {
+    width: 221px;
+    height: 359px;
+}
+.pp {
+    margin-top: 20px;
+}

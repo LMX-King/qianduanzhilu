@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点我</button>
+    <div>某个时间段</div>
+    <p>0</p>
+    <script>
+        var div = document.querySelector('div');
+        var btn = document.querySelector('button');
+        btn.onclick = function () {
+            div.innerText = getDate();
+            // div.innerText = '2019-16-5';
+        }
+        function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var date1 = date.getDate();
+            var day = date.getDay();
+            var hours = date.getHours();
+            var min = date.getMinutes();
+            var second = date.getSeconds();
+            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            return '今天是' + year + '年' + month + '月' + date1 + '日 ' + arr[day] + hours + '点' + min + '分' + second + '秒';
+        }
+        var p = document.querySelector('p');
+        p.innerText = getDate();
+    </script>
+</body>
+
+</html>

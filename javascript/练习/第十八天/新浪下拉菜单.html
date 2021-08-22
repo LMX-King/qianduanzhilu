@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 1000px;
+        }
+
+        div {
+            width: 78px;
+        }
+
+        .xa a {
+            display: block;
+            height: 40px;
+            background-color: #fcfcfc;
+            text-align: center;
+            line-height: 40px;
+            color: #4c4c4c;
+            text-decoration: none;
+        }
+
+        div a:hover {
+            color: #ff8400;
+            background-color: #edeef0;
+        }
+
+        ul {
+            display: none;
+            border-left: 1px solid #ebbe7a;
+            border-right: 1px solid #ebbe7a;
+            border-bottom: 1px solid #ebbe7a;
+            background-color: #fff;
+        }
+
+        ul li {
+            border-bottom: 1px solid #fecc5b;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        ul li a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: #e67902;
+            background-color: #fff5da;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xd">
+        <div class="xa"><a href="#">微博</a></div>
+        <ul class="ul">
+            <li><a href="#">私信</a></li>
+            <li><a href="#">评论</a></li>
+            <li><a href="#">@我</a></li>
+        </ul>
+    </div>
+    <script>
+        var xd = document.querySelector('.xd');
+        var ul = document.querySelector('.ul');
+        xd.onmouseover = function () {
+            ul.style.display = 'block';
+        }
+        xd.onmouseout = function () {
+            ul.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

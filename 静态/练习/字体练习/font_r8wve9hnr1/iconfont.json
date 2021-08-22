@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19475182",
+      "name": "chevron-left",
+      "font_class": "chevron-left",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "19475183",
+      "name": "chevron-down",
+      "font_class": "chevron-down",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    }
+  ]
+}
